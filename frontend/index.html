@@ -7,7 +7,89 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Smart To Do Manager</h1>
+    <!-- <h1>Smart To Do Manager</h1> -->
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <h2 class="logo">Smart Task Manager</h2>
+
+            <nav class="menu">
+                <p>Dashboard</p>
+                <p>All Tasks</p>
+                <p>Completed Tasks</p>
+            </nav>
+
+            <div class="labels">
+                <h4>Labels</h4>
+                <p>Work</p>
+                <p>Personal</p>
+                <p>Urgent</p>
+
+
+                <nav class="menu-bottom">
+            <p>Analytics</p>
+            <p>Settings</p>
+        </nav>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Navbar -->
+        <header class="navbar">
+            <input type="text" placeholder="Search tasks..." />
+            <div class="nav-icons">
+                🔔 👤
+            </div>
+        </header>
+
+        <!-- Dashboard -->
+        <section class="dashboard">
+
+            <!-- Stats -->
+            <div class="stats">
+                <div class="card">Total Tasks</div>
+                <div class="card">Completed</div>
+                <div class="card">Pending</div>
+                <div class="card">Productivity</div>
+            </div>
+
+            <!-- Task Form -->
+            <div class="task-form">
+                <h3>Create New Task</h3>
+
+                <input type="text" placeholder="What needs to be done?">
+
+                <select>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <input type="date">
+
+                <input type="text" placeholder="Add tags">
+
+                <button>Add Task</button>
+            </div>
+
+            <!-- Recent Tasks -->
+            <div class="tasks">
+                <h3>Recent Tasks</h3>
+                <div class="task-item">Design System Update</div>
+                <div class="task-item">Grocery Shopping</div>
+                <div class="task-item">Quarterly Meeting</div>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+            </div>
+        </aside>
+    </div>
 
 
     <script src="js/app.js"></script>

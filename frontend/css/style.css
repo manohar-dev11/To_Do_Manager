@@ -4,3 +4,85 @@ body {
     padding: 0;
     background: #f5f6fa;
 }
+
+.app-container{
+display:flex;
+height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:240px;
+background:white;
+padding:20px;
+border-right:1px solid #ddd;
+}
+
+.logo{
+margin-bottom:30px;
+}
+
+/* Main Content */
+
+.main-content{
+flex:1;
+display:flex;
+flex-direction:column;
+}
+
+/* Navbar */
+
+.navbar{
+height:60px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 20px;
+background:white;
+border-bottom:1px solid #ddd;
+}
+
+/* Dashboard */
+
+.dashboard{
+padding:20px;
+}
+
+/* Stats cards */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+margin-bottom:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Task form */
+
+.task-form{
+background:white;
+padding:20px;
+border-radius:8px;
+margin-bottom:20px;
+}
+
+/* Task list */
+
+.tasks{
+background:white;
+padding:20px;
+border-radius:8px;
+}
+
+.task-item{
+padding:10px;
+border-bottom:1px solid #eee;
+}
