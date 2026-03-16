@@ -59,27 +59,25 @@
             <div class="task-form">
                 <h3>Create New Task</h3>
 
-                <input type="text" placeholder="What needs to be done?">
+                <input id="taskTitle" type="text" placeholder="What needs to be done?">
 
-                <select>
+                <select id="taskPriority">
                     <option>Low</option>
                     <option>Medium</option>
                     <option>High</option>
                 </select>
 
-                <input type="date">
+                <input id="taskDeadline" type="date">
 
-                <input type="text" placeholder="Add tags">
+                <input id="taskTags" type="text" placeholder="Add tags">
 
-                <button>Add Task</button>
+                <button id="addTaskBtn">Add Task</button>
             </div>
 
             <!-- Recent Tasks -->
             <div class="tasks">
                 <h3>Recent Tasks</h3>
-                <div class="task-item">Design System Update</div>
-                <div class="task-item">Grocery Shopping</div>
-                <div class="task-item">Quarterly Meeting</div>
+                <div id="taskList"></div>
             </div>
 
         </section>
@@ -93,5 +91,6 @@
 
 
     <script src="js/app.js"></script>
+    <script src="js/taskmanager.js"></script>
 </body>
 </html>
