@@ -105,6 +105,8 @@ function addTask(){
 
     const task = createTask(title, priority, deadline, tags);
 
+    createTaskAPI(task);
+
     tasks.push(task);
 
     sortTasks();
@@ -133,27 +135,28 @@ function toggleTask(id){
 
 }
 
-function deleteTask(id){
+function deleteTask(id) {
+  deleteTaskAPI(id);
 
-    tasks = tasks.filter(task => task.id !== id);
+  tasks = tasks.filter((task) => task.id !== id);
 
-    renderTasks();
+  renderTasks();
 
-    saveTasks();
-
+  saveTasks();
 }
 
 function loadTasks(){
 
-const stored = localStorage.getItem("tasks");
+async function loadTasks(){
 
-if(stored){
+const data = await fetchTasks();
 
-tasks = JSON.parse(stored);
+tasks = data;
 
 renderTasks();
 
 }
 
 }
+
 
