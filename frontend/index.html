@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do Manager</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- <h1>Smart To Do Manager</h1> -->
 
@@ -27,70 +29,99 @@
 
 
                 <nav class="menu-bottom">
-            <p>Analytics</p>
-            <p>Settings</p>
-        </nav>
-    </aside>
-
-
-    <!-- Main Content -->
-    <main class="main-content">
-
-        <!-- Top Navbar -->
-        <header class="navbar">
-            <input id="searchInput" type="text" placeholder="Search tasks..." />
-            <div class="nav-icons">
-                🔔 👤
-            </div>
-        </header>
-
-        <!-- Dashboard -->
-        <section class="dashboard">
-
-            <!-- Stats -->
-            <div class="stats">
-                <div class="card">Total Tasks</div>
-                <div class="card">Completed</div>
-                <div class="card">Pending</div>
-                <div class="card">Productivity</div>
-            </div>
-
-            <!-- Task Form -->
-            <div class="task-form">
-                <h3>Create New Task</h3>
-
-                <input id="taskTitle" type="text" placeholder="What needs to be done?">
-
-                <select id="taskPriority">
-                    <option>Low</option>
-                    <option>Medium</option>
-                    <option>High</option>
-                </select>
-
-                <input id="taskDeadline" type="date">
-
-                <input id="taskTags" type="text" placeholder="Add tags">
-
-                <button id="addTaskBtn">Add Task</button>
-            </div>
-
-            <!-- Recent Tasks -->
-            <div class="tasks">
-                <h3>Recent Tasks</h3>
-                <div id="taskList"></div>
-            </div>
-
-        </section>
-
-    </main>
-
-</div>
-            </div>
+                    <p>Analytics</p>
+                    <p>Settings</p>
+                </nav>
         </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Top Navbar -->
+            <header class="navbar">
+                <input id="searchInput" type="text" placeholder="Search tasks..." />
+                <div class="nav-icons">
+                    🔔 👤
+                </div>
+            </header>
+
+            <!-- Dashboard -->
+            <section class="dashboard">
+
+                <!-- Stats -->
+                <div class="stats">
+                    <div class="card">
+                        <h3>Total Tasks</h3>
+                        <p id="totalTasks">0</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Completed</h3>
+                        <p id="completedTasks">0</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Pending</h3>
+                        <p id="pendingTasks">0</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Productivity</h3>
+                        <p id="productivityRate">0%</p>
+                    </div>
+                </div>
+
+                <!-- Task Form -->
+                <div class="task-form">
+                    <h3>Create New Task</h3>
+
+                    <input id="taskTitle" type="text" placeholder="What needs to be done?">
+
+                    <select id="taskPriority">
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+
+                    <input id="taskDeadline" type="date">
+
+                    <input id="taskTags" type="text" placeholder="Add tags">
+
+                    <button id="addTaskBtn">Add Task</button>
+                </div>
+
+                <!-- Recent Tasks -->
+                <div class="tasks">
+                    <h3>Recent Tasks</h3>
+                    <div id="taskList"></div>
+                </div>
+
+                <div class="analytics">
+
+                    <h3>Weekly Productivity</h3>
+
+                    <canvas id="productivityChart"></canvas>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+    </div>
+    </aside>
     </div>
 
 
-    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
     <script src="js/taskmanager.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
+
 </html>

@@ -34,6 +34,8 @@ function renderTasks() {
 
 
     });
+
+    renderStats();
 }
 
 function searchTasks(query){

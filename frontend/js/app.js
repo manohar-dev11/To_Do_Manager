@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     addBtn.addEventListener("click", addTask);
 
     loadTasks();
+    renderChart();
 
 });
 

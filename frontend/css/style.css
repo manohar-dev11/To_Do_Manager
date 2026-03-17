@@ -86,3 +86,14 @@ border-radius:8px;
 padding:10px;
 border-bottom:1px solid #eee;
 }
+
+.analytics{
+background:white;
+padding:20px;
+border-radius:8px;
+margin-top:20px;
+}
+
+canvas{
+max-height:300px;
+}
